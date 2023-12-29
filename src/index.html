@@ -7,14 +7,78 @@
 
   <title>Curso Tailwind</title>
 </head>
-<body>
-  <h1 class="font-semibold text-sky-600 text-center text-2xl sm:text-4xl md:text-7xl sm:text-green-500">Curso Tailwind</h1> 
+<body class="bg-slate-200">
 
-  <div class="w-full border-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-    <div class="h-20 bg-red-500">1</div>
-    <div class="h-20 bg-green-500">2</div>
-    <div class="h-20 bg-blue-500">3</div>
-    <div class="h-20 bg-yellow-500">4</div>
-  </div>
+  <main class="flex w-full min-h-screen">
+
+    <section class="flex flex-col flex-1 h-screen justify-center items-center p-4 sm:p-20 lg:p-32">
+
+      <div class="w-full max-w-xs flex flex-col items-center justify-center">
+
+        <img 
+          class="h-20 hover:scale-110 duration-300" 
+          src="../img/user.png" 
+          alt="user image"
+        >
+        <h1 class="text-3xl font-bold mb-6">Login</h1>
+  
+        <form action="" class="flex flex-col mb-4 w-full">
+  
+          <input 
+            class="rounded py-1 px-2 mb-2 outline-none bg-gray-50 focus:bg-white" 
+            type="text" 
+            placeholder="Digite seu email"
+          >
+          <input 
+            class="rounded py-1 px-2 mb-2 outline-none bg-gray-50 focus:bg-white" 
+            type="password" 
+            placeholder="*********"
+          >
+  
+          <div class="flex justify-between items-center mb-3">
+  
+            <div class="flex items-center gap-2">
+              <input 
+                class="" 
+                type="radio" 
+                name="radio" id="radio"
+              >
+              <label 
+                class="text-xs" 
+                for="radio"  
+              >Lembrar senha</label>
+            </div>
+  
+            <a class="text-xs text-sky-600 hover:text-sky-500 duration-300" href="#">Esqueceu sua senha?</a>
+  
+          </div>
+  
+          <button 
+            class="bg-blue-600 text-white rounded p-1" 
+            type="submit"
+          >Acessar</button>
+  
+        </form>
+  
+        <p class="text-xs">
+          Nao possui uma conta? 
+          <a class="text-sky-600 hover:text-sky-500 duration-300" href="#">Criar uma conta!</a>
+        </p>
+      </div>
+
+    </section>
+
+    <section class="hidden h-screen bg-blue-600 flex-1 justify-center items-center md:flex flex-col p-20 lg:p-32">
+
+      <div class="w-full max-w-xs flex flex-col items-center justify-center">
+        <p class="text-center text-white lg:text-2xl mb-5 lg:mb-10">
+          Domine as <strong>tecnologias mais buscadas</strong> pelo mercado!
+        </p>
+        <img src="../img/techs.png" alt="tecnologias usadas no mercado">
+      </div>
+
+    </section>
+
+  </main>
 </body>
 </html>
